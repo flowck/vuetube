@@ -5,15 +5,20 @@
     <!-- Tags -->
     <ul class="tags">
       <li v-on:click="setTag">vuex</li>
+      <li v-on:click="setTag">vue-router</li>
+      <li v-on:click="setTag">vuetify</li>
+      <li v-on:click="setTag">nuxt</li>
+      <li v-on:click="setTag">ssr</li>
+      <li v-on:click="setTag">typescript</li>
+      <li v-on:click="setTag">axios</li>
+      <li v-on:click="setTag">testing</li>
+      <li v-on:click="setTag">vue-material</li>
+      <li v-on:click="setTag">laravel</li>
       <li v-on:click="setTag">tutorial</li>
       <li v-on:click="setTag">talks</li>
       <li v-on:click="setTag">conf</li>
-      <li v-on:click="setTag">axios</li>
-      <li v-on:click="setTag">testing</li>
-      <li v-on:click="setTag">vue-router</li>
-      <li v-on:click="setTag">vue-material</li>
-      <li v-on:click="setTag">nuxt</li>
     </ul>
+    <div class="space"></div>
     <div class="space"></div>
     <!-- Videos -->
     <div class="listing" v-show="!loading">
@@ -41,6 +46,7 @@
       </article>
     </div>
 
+    <!-- Content Placeholder -->
     <div class="loading" v-show="loading">
       <article v-for="fake in [1, 2, 3, 4, 5, 6, 7, 8]" :key="fake.id"></article>
     </div>
@@ -48,8 +54,10 @@
 </template>
 
 <script>
+// Import moment to formate the dates
 import moment from 'moment';
 
+// Component script body
 export default {
   name: 'Feed',
   data() {
@@ -76,7 +84,7 @@ export default {
   },
   filters: {
     date(value) {
-      // Formate the date field
+      // Format the date field
       return moment(value).fromNow();
     },
   },
