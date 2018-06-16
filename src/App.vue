@@ -19,6 +19,8 @@
             Fork here
           </a>
         </p>
+        <div class="space"></div>
+        <iframe src="https://ghbtns.com/github-btn.html?user=flowck&repo=vuetube&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
       </div>
     </div>
     <div class="wrap root view">
@@ -119,6 +121,10 @@ export default {
 
   .view{
     margin-top: 300px;
+  }
+
+  .spot iframe{
+    width: 90px;
   }
 </style>
 
