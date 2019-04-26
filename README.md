@@ -39,3 +39,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 - [ ] Test components
 
 - [ ] Animations
+
+## License
+
+MIT © [Firmino Changani](https://flowck.github.io)
